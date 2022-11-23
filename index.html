@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* div button {
+        padding: 10px;
+        font-weight: 500;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        border-radius: 5px;
+        border: 2px solid white;
+      }
+      div button:hover {
+        background-color: aquamarine;
+        cursor: pointer;
+        background-color: #50627e;
+        color: white;
+        outline: none;
+        -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
+      }
+
+      div input {
+        padding: 10px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 200px;
+      }
+      div.boom{
+       position: relative;
+       bottom: 200px;
+      } */
+      .button2 {
+        color: white;
+        padding: 16px 32px;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      .button2 {
+        background-color: white;
+        color: black;
+        border: 2px solid #008cba;
+      }
+
+      .button2:hover {
+        background-color: #008cba;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <input type="checkbox" type="radio" name="" id=""> -->
+    <!-- <div>
+      <input type="checkbox" name="" onclick="display" id="get" />
+      <input type="checkbox" name="" onclick="display" id="get" />
+      <input type="checkbox" name="" onclick="display" id="get" />
+      <input type="checkbox" name="" onclick="display" id="get" />
+      <input type="checkbox" name="" onclick="display" id="get" />
+     
+    </div> -->
+    <!-- <div id="main_id">
+    
+     <input readonly id="boom">
+    </div>
+   -->
+    <!-- <p id="reverse"></p> -->
+    <!-- <div style="display: flex; border: 2px solid grey; padding: 50px">
+      <label
+        style="
+          font-size: 20px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+            sans-serif;
+          font-weight: 500;
+        "
+        >Traiangle</label
+      >
+      <input
+        type="checkbox"
+        id="chkemployment"
+        onChange="never('Circle');"
+      /><br />
+
+      <label
+        style="
+          font-size: 20px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+            Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+            sans-serif;
+          font-weight: 500;
+        "
+        >Circle</label
+      >
+      <input
+        type="checkbox"
+        id="chkpopulation"
+        onChange="never('Traiangle');"
+      />
+      
+      <label
+      style="
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+        font-weight: 500;
+      "
+      >Poligon</label
+    >
+    <input
+      type="checkbox"
+      id="chkemployment"
+      onChange="never('Poligon');"
+    />
+    </div>
+
+    <img
+      id="Circle"
+      src="https://media.istockphoto.com/id/1328397188/photo/shiny-neon-triangle-frame-light-geometric-shapes-3d-render.jpg?b=1&s=170667a&w=0&k=20&c=z33eHDgkGLC55N54SaH-4Qs6Gi2_bfZGCaZ7vn8dxt4="
+      style="visibility: hidden"
+    />
+    <img
+      id="Traiangle"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5fwDGQO1VUzmSLdryxgDaUVJCUNlJeKraqw&usqp=CAU"
+      style="visibility: hidden"
+    />
+    <img
+      id="Poligon"
+      src="https://w7.pngwing.com/pngs/1017/323/png-transparent-regular-polygon-hexagon-internal-angle-heptagon-hexagon-angle-white-rectangle-thumbnail.png"
+      style="visibility: hidden"
+    /> -->
+    <!-- <button onclick="{myFunction()}" class="button2">Try it</button> -->
+    <!-- <input type="text" name="txt" value="Hello" onchange="myFunctionto(this.value)"> -->
+     <button style="padding:10px;" onclick="myfun()" class="button2">Click me</button>
+ 
+  </body>
+  <script>
+    function myfun(){
+    let a = 10
+    let b = Number(prompt('Enter the val'))
+    if(a>b){
+    document.write(a +" Exact number is greater than your number " +b)
+    }else if(a<b){
+      document.write("Your number is graeter than Exact number" + "    "+  a)
+    }else if(a==b){
+      document.write(`${a} and ${b} both are equal `)
+    }
+  }
+    
+   
+    // function myFunction() {
+    //   let favDrink = prompt("Enter your milles");
+    //   alert(favDrink * 1.6 + "    Kilometers");
+    //   console.log(favDrink);
+    // }
+
+    // function myFunctionto(val) {
+    //   alert("The input value has changed. The new value is: " + val);
+    // }
+    //  let name ="32253"
+    //  let newarr=[...name]
+    //  let revnum=""
+    //   for(let i=newarr.length-1; i>=0;i--){
+    //     revnum += newarr[i]
+
+    //   }
+    //   document.write(revnum)
+    //    Function with reserve
+    // {
+    // 	n = n + "";
+    // 	return n.split("").reverse().join("");
+    // }
+    // document.write((reverse(32253)));
+    //  let display = ["3","2","2","5","3"]
+    // //  let reverse = function (display)
+    //  document.write.reverse("display")
+    // function never(id) {
+    //   var ansar = document.getElementById(id);
+
+    //   if (ansar.style.visibility == "visible") {
+    //     ansar.style.visibility = "hidden";
+    //   }
+    //    else {
+    //     ansar.style.visibility = "visible";
+    //   }
+    //   }
+
+    // let myfun = a =>{
+    //   document.write(a);
+    // }
+    // myfun("ANSAR,");
+    // for(i=0; i<51; i++){
+    //   document.write(i +"<br>");
+    // }
+    // FOR IN LOOPS
+    // let obj ={
+    //  ansar: 100,
+    //  arzoo: 50,
+    //  duwa: 120,
+    //  afzal:100,
+    //  china:500,
+    // }
+    // for(let a in obj){
+    //   document.write("Marks of" + a + "are "  + obj[a])
+    //   console.log("Marks of" + a + "are "  + obj[a])
+    // }
+
+    // let sithuation = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+    // document.getElementById("reverse").innerHTML = sithuation .reverse();
+    // // let sithuation1=sithuation.splice(13,26);
+    // // document.write(sithuation1 + "");
+    // let sithuation2=sithuation.splice(0,13);
+    // document.write(sithuation2 + "<br>");
+    // document.write(sithuation + "<br>");
+    // console.log(sithuation);
+
+    // function ansar(){
+    //   document.write("COME ON DUDE GO AHEAD" + "<br>");
+    // }
+    // ansar();
+    // ansar();
+    // ansar();
+
+    //      let fruits = [
+    //      "Apples",
+    //     "Orange",
+    //     "Mango",
+    //     "Bnana",
+    //   ];
+    //   const getid=document.getElementById('main_id');
+    //   var divelement = document.createElement("div");
+    //        for(let i=0; i<=fruits.length-1; i++)
+    //        {
+
+    //         divelement.innerHTML += `<button onclick='first(${i})'  id="item${i}" >${fruits[i]}</button`;
+    //           console.log(i)
+    //        }
+    //        getid.appendChild(divelement);
+    // function first(i) {
+    //   let boom = 120;
+    //   document.getElementById("boom").value = boom;
+    // }
+    // function second() {
+    //   let boom = 200;
+    //   document.getElementById("boom").value = boom;
+    // }
+    // function third() {
+    //   let boom = 250;
+    //   document.getElementById("boom").value = boom;
+    // }
+    // function four() {
+    //   let boom = 600;
+    //   document.getElementById("boom").value = boom;
+    // }
+    // function five() {
+    //   let boom = 390;
+    //   document.getElementById("boom").value = boom;
+    // }
+
+    //     let x = 20
+    //     let y = 80
+    // if (x < 30) {
+    //     if (y > 10) {
+    //       document.write("y is greater");
+    //     }
+    //     else{
+    //       document.write("y is smaller");
+    //     }
+    // }
+    // else{
+    //     document.write("Nothin imposible")
+    // }
+    // let selectedcolors = ['red','grey'];
+    // console.log(selectedcolor[1]);
+    // for(let i = 1; i<=5; i++){
+    //     document.write("Outer for loop <br> " +"color:red;");
+    //     for(let j = 1; j<=5; j++){
+    //         document.write("Outer for loop  <br>");
+    //     }
+    // }"
+    // let ansar = ["Pakistan","India","America","Dubai","Uk"]
+    // for(let a = 0; a<=0; a++){
+    //     document.write(ansar[2] + "<br>");
+    // }
+    // function func() {
+    //     var arr = ['GFG', 'gfg', 'g4g', 'GeeksforGeeks'];
+
+    //     // Popping the last element from the array
+    // document.write(arr.pop());
+    // }
+    // let ansar = ["1","2","3","4","5","6","7","8","9","10"]
+    //  document.write(ansar + "<br>")
+    //  ansar.push(11,12,13,14,15,16,17,18,19,20);
+    // //  document.write(ansar + "<br>")
+    //  ansar.unshift(-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,-0)
+    //  document.write(ansar + "<br>")
+    //  ansar.splice(0,6,-5)
+    //  document.write(ansar + "<br>");
+    // let a = ["ansar","rehman","aqeel","rana"];
+  </script>
+</html>
